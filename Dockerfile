@@ -18,6 +18,7 @@ RUN apt-get update \
   libssl-dev \
   udev \
   systemd \
+  libsystemd-dev \
   && rm -rf /var/lib/apt/lists/*
 
 
