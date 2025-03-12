@@ -106,7 +106,7 @@ COPY --from=build-libimobiledevice /build /
 # Build
 RUN git clone https://github.com/libimobiledevice/usbmuxd && cd usbmuxd \
   && ./autogen.sh --sysconfdir=/etc --localstatedir=/var --runstatedir=/run && make -j "$(nproc)" && make install DESTDIR=/build \
-  && cd .. && rm -rf usbmuxd && mv /build/lib /build/usr/lib
+  && cd .. && rm -rf usbmuxd 
 
 
 # Create main image
