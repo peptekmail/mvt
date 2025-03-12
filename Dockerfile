@@ -17,6 +17,7 @@ RUN apt-get update \
   libusb-1.0-0-dev \
   libssl-dev \
   udev \
+  systemd \
   && rm -rf /var/lib/apt/lists/*
 
 
