@@ -13,9 +13,9 @@ RUN apt-get update \
   automake \
   libtool-bin \
   libplist-dev \
-	libusbmuxd-dev \
-	libimobiledevice-dev \
-	libimobiledevice-glue-dev \
+  libusbmuxd-dev \
+  libimobiledevice-dev \
+  libimobiledevice-glue-dev \
   pkg-config \
   libcurl4-openssl-dev \
   libusb-1.0-0-dev \
@@ -23,6 +23,7 @@ RUN apt-get update \
   udev \
   systemd \
   libsystemd-dev \
+  usbmuxd \
   && rm -rf /var/lib/apt/lists/*
 
 
